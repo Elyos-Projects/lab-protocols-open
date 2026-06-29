@@ -185,6 +185,39 @@ v1→v2 revision demonstrates versioning discipline.
 
 ---
 
+## Generated task index
+
+All 23 backlog rows have corresponding schema-valid `tasks/<id>.json` files.
+Validation: `node validate-tasks.mjs tasks/` → **23/23 PASS**.
+
+| File | Milestone | Type | Risk | Deliverable | Priority |
+| --- | --- | --- | --- | --- | --- |
+| [lab-protocols-open-schema-001.json](tasks/lab-protocols-open-schema-001.json) | M0 | design-spec | low | document | high |
+| [lab-protocols-open-reviewer-002.json](tasks/lab-protocols-open-reviewer-002.json) | M0 | research | medium | document | high |
+| [lab-protocols-open-gate-003.json](tasks/lab-protocols-open-gate-003.json) | M0 | design-spec | medium | document | high |
+| [lab-protocols-open-vocab-004.json](tasks/lab-protocols-open-vocab-004.json) | M0 | writing | medium | document | high |
+| [lab-protocols-open-template-005.json](tasks/lab-protocols-open-template-005.json) | M0 | writing | medium | document | medium |
+| [lab-protocols-open-outreach-006.json](tasks/lab-protocols-open-outreach-006.json) | M0 | research | low | document | medium |
+| [lab-protocols-open-pilot-007.json](tasks/lab-protocols-open-pilot-007.json) | M0 | data | high | document | high |
+| [lab-protocols-open-validate-008.json](tasks/lab-protocols-open-validate-008.json) | M1 | code | low | pr | medium |
+| [lab-protocols-open-lint-009.json](tasks/lab-protocols-open-lint-009.json) | M1 | code | low | pr | medium |
+| [lab-protocols-open-render-010.json](tasks/lab-protocols-open-render-010.json) | M1 | code | low | pr | medium |
+| [lab-protocols-open-workflow-011.json](tasks/lab-protocols-open-workflow-011.json) | M1 | design-spec | medium | document | medium |
+| [lab-protocols-open-partner-012.json](tasks/lab-protocols-open-partner-012.json) | M1 | research | low | document | high |
+| [lab-protocols-open-seed-nucleic-013.json](tasks/lab-protocols-open-seed-nucleic-013.json) | M2 | data | high | document | medium |
+| [lab-protocols-open-seed-culture-014.json](tasks/lab-protocols-open-seed-culture-014.json) | M2 | data | high | document | medium |
+| [lab-protocols-open-seed-protein-015.json](tasks/lab-protocols-open-seed-protein-015.json) | M2 | data | high | document | medium |
+| [lab-protocols-open-revision-016.json](tasks/lab-protocols-open-revision-016.json) | M2 | maintenance | high | document | low |
+| [lab-protocols-open-interop-017.json](tasks/lab-protocols-open-interop-017.json) | M3 | code | low | pr | low |
+| [lab-protocols-open-sustain-018.json](tasks/lab-protocols-open-sustain-018.json) | M3 | design-spec | low | document | low |
+| [lab-protocols-open-seq-prep-019.json](tasks/lab-protocols-open-seq-prep-019.json) | Backlog | data | high | document | low |
+| [lab-protocols-open-imaging-020.json](tasks/lab-protocols-open-imaging-020.json) | Backlog | data | high | document | low |
+| [lab-protocols-open-regional-021.json](tasks/lab-protocols-open-regional-021.json) | Backlog | writing | high | document | low |
+| [lab-protocols-open-community-022.json](tasks/lab-protocols-open-community-022.json) | Backlog | design-spec | medium | document | low |
+| [lab-protocols-open-i18n-023.json](tasks/lab-protocols-open-i18n-023.json) | Backlog | writing | high | translation | low |
+
+---
+
 ## Example task JSON
 
 A complete, schema-valid Task JSON for the first M0 task (`reviewer-002`), the blocking

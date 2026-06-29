@@ -1,0 +1,34 @@
+{
+  "id": "lab-protocols-open-imaging-020",
+  "title": "Microscopy/imaging sample-prep protocols",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "lab-safety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Microscopy and imaging sample preparation (fixation, permeabilization, mounting) are essential steps in cancer cell biology and pathology imaging workflows, but fixatives such as formaldehyde and paraformaldehyde are significant health hazards (carcinogens, respiratory sensitizers) that require rigorous safety documentation. This unscheduled backlog task targets common, openly-licensed imaging sample-prep methods with particular attention to formaldehyde hazard handling, waste disposal, and ventilation requirements.",
+  "objective": "Author, validate, lint, and ship microscopy/imaging sample-preparation protocol records (fixation, permeabilization, and/or mounting) through the full pipeline, with rigorous hazard documentation for formaldehyde and other fixatives, and credentialed safety sign-off.",
+  "acceptanceCriteria": [
+    "At least two imaging sample-prep protocols authored (e.g., paraformaldehyde fixation and a mounting/sealing protocol); each schema-valid and linter-green.",
+    "Formaldehyde/paraformaldehyde hazard handling documented in full: carcinogen classification (GHS), ventilation requirements, PPE, spill response, waste disposal per EPA/OSHA; credentialed safety sign-off recorded.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "License+Ethics gate PASS per protocol; dual-use screen clear; all mandatory disclaimers present.",
+    "semver v1.0.0 + CHANGELOG per protocol; rendered Markdown/HTML produced; CI green; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001, validate-008, lint-009, render-010 (pipeline tooling)",
+    "OSHA formaldehyde standard 29 CFR 1910.1048",
+    "ECHA/GHS SDS for paraformaldehyde and formaldehyde",
+    "protocols.io (per-protocol CC-BY source candidates — license must be verified per item)"
+  ],
+  "output": "Committed, fully-reviewed imaging sample-prep protocol records with rendered outputs, license evidence, formaldehyde hazard documentation, and all review sign-offs; CI green; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

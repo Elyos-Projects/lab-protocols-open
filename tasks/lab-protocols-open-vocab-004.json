@@ -1,0 +1,35 @@
+{
+  "id": "lab-protocols-open-vocab-004",
+  "title": "Safety taxonomy + controlled vocabularies (hazards/PPE/waste/biosafety)",
+  "project": "lab-protocols-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["lab-safety", "biosafety", "open-science", "cancer-research"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Machine-readable, consistent safety data requires controlled vocabularies so that hazard classes, PPE requirements, waste categories, and biosafety levels are never free text. Without standardized terms aligned to GHS, NIH/CDC BMBL, OSHA/EPA, and institutional waste categories, the linter cannot enforce safety completeness and the schema cannot validate hazard coverage reliably. This vocabulary is a prerequisite for authoring any safety-bearing protocol. Depends on schema-001 (schema-001 defines the fields; vocab-004 defines the valid values).",
+  "objective": "Define and publish the controlled vocabularies for hazard classes, PPE, waste disposal, and biosafety levels as YAML files aligned to GHS, NIH/CDC BMBL, OSHA/EPA, and standard waste categories, suitable for reference by the JSON Schema and the linter.",
+  "acceptanceCriteria": [
+    "vocab/hazards.yaml covers GHS hazard classes and pictograms with authoritative source citations.",
+    "vocab/ppe.yaml covers standard PPE types (gloves, gowns, goggles, respirators, face shields) aligned to OSHA/NIOSH categories.",
+    "vocab/waste.yaml covers chemical, biological, sharps, and radioactive waste categories aligned to EPA/CDC/OSHA guidance.",
+    "vocab/biosafety-levels.yaml covers BSL-1 through BSL-4 per NIH/CDC BMBL definitions.",
+    "Each vocabulary entry cites its authoritative source (standard, edition, section); commit DCO signed-off.",
+    "Vocabularies reviewed and signed off by credentialed safety reviewer (or annotated for review pending reviewer-002 completion)."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "GHS Purple Book (UN Globally Harmonized System of Classification and Labelling of Chemicals) — https://unece.org/ghs",
+    "NIH/CDC BMBL 6th ed. — https://www.cdc.gov/labs/bmbl/",
+    "OSHA Laboratory Standard 29 CFR 1910.1450",
+    "ECHA Chemical classification and labelling — https://echa.europa.eu/"
+  ],
+  "output": "Committed YAML controlled vocabularies (vocab/hazards.yaml, vocab/ppe.yaml, vocab/waste.yaml, vocab/biosafety-levels.yaml) with authoritative source citations per entry, aligned to GHS/BMBL/OSHA/EPA; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

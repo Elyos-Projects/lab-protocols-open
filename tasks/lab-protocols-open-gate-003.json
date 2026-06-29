@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-gate-003",
+  "title": "License + Ethics + Dual-use triage checklist (blocking gate)",
+  "project": "lab-protocols-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-science", "lab-safety", "biosafety", "reproducibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every candidate protocol source must pass a mandatory License, Ethics, and Dual-use screen before authoring begins; no protocol may enter the pipeline without this gate passing. The gate must enumerate accepted licenses (CC0, CC-BY) versus cite-only (CC-BY-NC, copyrighted journals), encode ethics checks for human-derived material (IRB/consent) and animal use (IACUC/3Rs), and enforce a dual-use-of-concern screen. Without a published, ratified gate checklist, the project has no enforceable baseline for license compliance, ethics, or DURC exclusion.",
+  "objective": "Design, write, and publish the License + Ethics + Dual-use triage checklist that serves as the blocking gate every candidate protocol source must pass before authoring, capturing license evidence, ethics flags, and dual-use screening criteria.",
+  "acceptanceCriteria": [
+    "Checklist enumerates accepted licenses (CC0, CC-BY) versus cite-only (CC-BY-NC, all copyrighted: Nature/CSH/Springer Protocols, Methods Mol Biol); default is EXCLUDE on unverifiable license.",
+    "License PASS requires recorded license id + URL + text snapshot (committed copy + SHA-256 + Wayback URL) and a permitsDerivatives flag derived from a cited clause.",
+    "Ethics section flags human-derived material (IRB/consent required) and animal use (IACUC/3Rs required); forbids patient/identifiable/controlled-access data.",
+    "Dual-use screen rejects DURC/weaponizable methods (viral-vector/gain-of-function/select-agent-adjacent); reviewer identity recorded for each decision.",
+    "Document committed to the project repo with DCO sign-off; designated License+Ethics gate owner recorded."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "NIH Dual Use Research of Concern (DURC) policy — https://www.phe.gov/s3/dualuse/",
+    "Creative Commons license compatibility chart — https://creativecommons.org/licenses/",
+    "Wayback Machine CDX API for snapshot evidence — https://archive.org/help/wayback_api.php"
+  ],
+  "output": "A committed checklist document (License+Ethics+Dual-use gate) covering license evidence, ethics flags, and DURC screening, with a designated gate-owner role and a ratified decision that no protocol authoring starts without a PASS.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

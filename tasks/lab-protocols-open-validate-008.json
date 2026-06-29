@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-validate-008",
+  "title": "`protocol validate` CLI (schema + semver/changelog checks)",
+  "project": "lab-protocols-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["open-science", "reproducibility", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The M1 pipeline requires automated enforcement of schema validity and versioning integrity so that human reviewers are not burdened with catching structural errors. The protocol validate CLI command is the first gate in the automated pipeline: it checks that a protocol record is valid against schema-001 and that semver + changelogRef are present and well-formed. This tool is a prerequisite for CI enforcement of the quality bar on all contributed protocols.",
+  "objective": "Implement the protocol validate CLI command (TypeScript/ESM, agent-neutral) that validates a protocol record against the Protocol JSON Schema from schema-001, checks semver version field format, and verifies changelogRef is present; exits non-zero with a machine-readable error report on failure.",
+  "acceptanceCriteria": [
+    "protocol validate <path> validates the protocol record against the Protocol JSON Schema using ajv; exits 0 on success, 1 on failure with a human-readable and machine-readable (JSON) error report.",
+    "Checks that semver version field is present and well-formed; checks that changelogRef is non-empty.",
+    "pnpm build && pnpm test && pnpm lint pass; CI green.",
+    "A README or inline help (--help) documents the command and exit codes.",
+    "PR includes at least one valid and one invalid fixture for test coverage; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "ajv JSON Schema validator — https://ajv.js.org/",
+    "semver specification — https://semver.org/"
+  ],
+  "output": "A merged PR adding the protocol validate CLI command with tests, help text, and CI integration; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

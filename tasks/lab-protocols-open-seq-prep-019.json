@@ -1,0 +1,34 @@
+{
+  "id": "lab-protocols-open-seq-prep-019",
+  "title": "Sequencing library-prep front-ends (open methods only)",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "lab-safety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Sequencing library-preparation front-end steps (fragmentation, end-repair, adapter ligation) are essential for next-generation sequencing workflows in cancer genomics, but many commercial methods are proprietary and not openly licenseable. This unscheduled backlog task targets the subset of library-prep methods with verifiably open licenses, requires per-method license verification (this is especially critical here due to widespread commercial restrictions), and involves hazardous reagents (enzymes, solvents, spin columns with chaotropic buffers) requiring full safety documentation.",
+  "objective": "Identify, license-verify, author, and ship sequencing library-prep front-end protocol records for openly-licensed methods only, each schema-valid, linted, fully provenanced, and with credentialed safety sign-off.",
+  "acceptanceCriteria": [
+    "Only openly-licensed methods (CC-BY or CC0) included; license verification recorded per method with source, snapshot, SHA-256, and cited clause; no proprietary/commercial methods reproduced.",
+    "At least two library-prep front-end protocols authored, schema-valid and linter-green.",
+    "Full safety sections present (chaotropic reagents, enzyme handling, waste disposal); credentialed safety sign-off recorded.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "License+Ethics gate PASS per protocol; dual-use screen clear; all mandatory disclaimers present.",
+    "semver v1.0.0 + CHANGELOG per protocol; rendered Markdown/HTML produced; CI green; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open gate-003 (license+ethics+dual-use gate — critical for per-method license verification)",
+    "lab-protocols-open schema-001, validate-008, lint-009, render-010 (pipeline tooling)",
+    "protocols.io (per-protocol CC-BY source candidates — license must be verified per item)"
+  ],
+  "output": "Committed, fully-reviewed sequencing library-prep protocol records (openly-licensed methods only) with rendered outputs, per-method license evidence, and all review sign-offs; CI green; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

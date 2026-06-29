@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-i18n-023",
+  "title": "Translate shipped safety summaries (vetted)",
+  "project": "lab-protocols-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["lab-safety", "biosafety", "open-science", "cancer-research"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A key beneficiary group is resource-limited cancer researchers in non-English-speaking countries, especially LMICs, where lab safety documentation in local languages is scarce. Translating the safety summaries of shipped protocols (PPE, hazards, waste, emergency) could significantly improve safety for researchers who are not confident readers of English technical text. However, safety translation is high-risk: a mistranslation of a hazard warning or emergency procedure could injure a researcher. Each translation requires domain-fluent safety review in the target language before shipment.",
+  "objective": "Translate the safety summary sections of at least two shipped protocols into at least two non-English languages, with each translation reviewed and signed off by a domain-fluent safety reviewer in that language, and delivered as language-tagged addenda to the protocol records.",
+  "acceptanceCriteria": [
+    "Safety summaries (PPE, hazards, waste disposal, emergency/spill response) of at least two shipped protocols translated into at least two non-English languages.",
+    "Each translation reviewed and signed off by a reviewer who is both domain-fluent (understands wet-lab safety context) and a native or highly proficient speaker of the target language.",
+    "Translations delivered as language-tagged addenda (e.g., safety-summary.es.md, safety-summary.fr.md) committed alongside the base protocol.",
+    "Source safety content reviewed by the credentialed safety reviewer before translation to ensure the source is accurate.",
+    "All mandatory disclaimers (RUO + institutional notice) translated into each target language and prominently included.",
+    "Translations committed to the project repo; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open vocab-004 (safety controlled vocabularies — translation baseline)",
+    "WHO Laboratory biosafety manual translations — https://www.who.int/publications/i/item/9789240011311"
+  ],
+  "output": "Committed language-tagged safety-summary translations for ≥2 protocols in ≥2 non-English languages, each with reviewer sign-off documentation; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

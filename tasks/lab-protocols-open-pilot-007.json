@@ -1,0 +1,36 @@
+{
+  "id": "lab-protocols-open-pilot-007",
+  "title": "Pilot protocol end-to-end: genomic DNA extraction (low hazard), fully reviewed",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "lab-safety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0's exit gate requires one low-hazard protocol shipped through the full pipeline — schema-valid, linted, license+ethics gate passed, dual-use screen clear, technical and safety sign-off recorded, rendered outputs produced. Genomic DNA extraction is the chosen pilot because it is a common, foundational cancer-research method with low-to-moderate hazard (chaotropic reagents, ethanol) and multiple openly-licensed source protocols available. This task proves the entire pipeline end-to-end before the seed library scales up.",
+  "objective": "Author and ship a complete, schema-valid genomic DNA extraction protocol through the full lab-protocols-open pipeline — license+ethics gate, dual-use screen, schema validation, provenance linting, technical review, credentialed safety sign-off, semver v1.0.0, changelog, and rendered Markdown/HTML outputs.",
+  "acceptanceCriteria": [
+    "One low-hazard protocol (genomic DNA extraction) authored to schema-001; schema-valid and linter-green.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "Full safety section present: PPE, hazards (chaotropic reagents, ethanol, etc.), waste disposal, spill/emergency response — with credentialed safety sign-off from the reviewer secured in reviewer-002.",
+    "License+Ethics gate PASS recorded with evidence (license id, URL, snapshot SHA-256, permitsDerivatives); dual-use screen clear.",
+    "All mandatory disclaimers present (RUO + institutional biosafety/EHS/IBC/IACUC/IRB notice).",
+    "semver v1.0.0 + CHANGELOG; rendered Markdown/HTML outputs produced; commit DCO signed-off; CI green."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open gate-003 (License+Ethics+Dual-use gate checklist)",
+    "lab-protocols-open vocab-004 (safety controlled vocabularies)",
+    "lab-protocols-open template-005 (authoring template + disclaimers)",
+    "NIH/CDC BMBL 6th ed. (biosafety levels and safety guidance)"
+  ],
+  "output": "A committed, schema-valid, fully-reviewed genomic DNA extraction protocol record (protocols/genomic-dna-extraction/v1.0.0/protocol.yaml + CHANGELOG.md) with rendered Markdown/HTML outputs, license evidence, and all review sign-offs recorded; CI green; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

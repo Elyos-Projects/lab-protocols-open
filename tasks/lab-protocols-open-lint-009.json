@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-lint-009",
+  "title": "`protocol lint` — provenance 100% + safety-completeness + no-data-fixture linter",
+  "project": "lab-protocols-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["open-science", "lab-safety", "reproducibility", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Provenance completeness (100% of assertions cite a source) and safety-section completeness (PPE/hazard/waste/emergency all present) are hard quality gates — not guidelines. The protocol lint CLI enforces these gates automatically so that every submitted protocol is machine-checked before human review, and dangerous gaps (missing safety info, uncited claims, dangling SDS/CAS references) are caught early. The linter also enforces the no-PII-by-design rule by rejecting any data fixtures or patient-like data in protocol records.",
+  "objective": "Implement the protocol lint CLI command that fails any protocol with a missing provenance reference on any step or safety claim, fails incomplete safety sections, fails dangling SDS/CAS refs, fails presence of data fixtures or patient-like data, and fails missing semver/changelog; emits a machine-readable report.",
+  "acceptanceCriteria": [
+    "FAILS any protocol with an assertion (step or safety claim) lacking a resolvable source reference.",
+    "FAILS incomplete safety sections: missing PPE, missing hazard class, missing waste disposal, missing emergency/spill response, or dangling SDS/CAS refs.",
+    "FAILS presence of any data fixture or patient-like data (no-PII-by-design enforcement).",
+    "FAILS missing semver version or changelogRef, and FAILS adaptation of a CC-BY-NC-licensed source.",
+    "Emits a machine-readable (JSON) report of all failures with field paths and rule IDs.",
+    "pnpm build && pnpm test && pnpm lint pass; CI green; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open vocab-004 (controlled vocabularies for valid hazard/PPE/waste terms)"
+  ],
+  "output": "A merged PR adding the protocol lint CLI command with comprehensive tests (valid and invalid fixtures covering each lint rule), machine-readable report output, and CI integration; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "lab-protocols-open-seed-nucleic-013",
+  "title": "Nucleic-acid protocol set (RNA extraction, qPCR setup)",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "lab-safety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "RNA extraction and qPCR setup are among the most commonly performed and reproducibility-critical methods in cancer research, yet publicly available, openly-licensed, safety-complete protocol records are scarce. These methods involve chaotropic reagents (guanidinium thiocyanate), beta-mercaptoethanol, and RNase contamination risks, requiring careful safety documentation. This task delivers the nucleic-acid subset of the M2 seed library, fully validated through the M1 pipeline tooling. riskTier is high due to hazardous reagents requiring credentialed safety sign-off.",
+  "objective": "Author, validate, lint, and ship a set of nucleic-acid protocols (RNA extraction and qPCR setup) through the full lab-protocols-open pipeline, each schema-valid, linter-green, with 100% provenance, complete safety sections, and credentialed safety sign-off.",
+  "acceptanceCriteria": [
+    "At least two protocols authored: RNA extraction (e.g., TRIzol-equivalent method using openly-licensed source) and qPCR setup; each schema-valid and linter-green.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "Full safety sections present: hazardous reagents (chaotropic agents, beta-mercaptoethanol, RNase risk), PPE, waste disposal, spill response — with credentialed safety sign-off.",
+    "License+Ethics gate PASS recorded per protocol with license evidence; dual-use screen clear.",
+    "All mandatory disclaimers present (RUO + institutional biosafety/EHS/IBC/IACUC/IRB notice).",
+    "semver v1.0.0 + CHANGELOG per protocol; rendered Markdown/HTML produced; CI green; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open validate-008, lint-009, render-010 (pipeline tooling)",
+    "NIH/CDC BMBL 6th ed. (biosafety guidance for chaotropic reagents and beta-mercaptoethanol)",
+    "protocols.io (per-protocol CC-BY source candidates — license must be verified per item)"
+  ],
+  "output": "Committed, fully-reviewed nucleic-acid protocol records (RNA extraction, qPCR setup) with rendered outputs, license evidence, and all review sign-offs; CI green; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

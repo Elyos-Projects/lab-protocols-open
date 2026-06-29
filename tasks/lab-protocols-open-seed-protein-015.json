@@ -1,0 +1,35 @@
+{
+  "id": "lab-protocols-open-seed-protein-015",
+  "title": "Protein/assay set (Western blot, immunofluorescence, viability assay)",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "lab-safety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Western blotting, immunofluorescence, and cell viability assays are among the most cited and most variably performed methods in cancer biology, and are a documented source of irreproducible results. These protocols involve acrylamide (neurotoxin), methanol, formaldehyde (potential carcinogen), and fluorescent reagents, all requiring careful hazard documentation. This task delivers the protein/assay subset of the M2 seed library through the full validated pipeline.",
+  "objective": "Author, validate, lint, and ship a set of protein and assay protocols (Western blot, immunofluorescence, cell viability assay) through the full lab-protocols-open pipeline, each schema-valid, linter-green, with 100% provenance, complete safety sections, and credentialed safety sign-off.",
+  "acceptanceCriteria": [
+    "At least three protocols authored: Western blot (gel electrophoresis + transfer + detection), immunofluorescence staining, and a cell viability assay (e.g., MTT or equivalent open-licensed method); each schema-valid and linter-green.",
+    "Hazardous reagents documented per step: acrylamide (neurotoxin/carcinogen), methanol, formaldehyde, and fluorescent reagents with SDS refs; credentialed safety sign-off recorded.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "License+Ethics gate PASS per protocol; dual-use screen clear; all mandatory disclaimers present.",
+    "semver v1.0.0 + CHANGELOG per protocol; rendered Markdown/HTML produced; CI green; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open validate-008, lint-009, render-010 (pipeline tooling)",
+    "NIH/CDC BMBL 6th ed. (chemical hazard handling)",
+    "ECHA/GHS SDS sources for acrylamide, methanol, formaldehyde",
+    "protocols.io (per-protocol CC-BY source candidates — license must be verified per item)"
+  ],
+  "output": "Committed, fully-reviewed protein/assay protocol records (Western blot, immunofluorescence, viability assay) with rendered outputs, license evidence, and all review sign-offs; CI green; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

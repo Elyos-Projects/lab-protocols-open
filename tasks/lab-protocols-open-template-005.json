@@ -1,0 +1,32 @@
+{
+  "id": "lab-protocols-open-template-005",
+  "title": "Authoring template + disclaimer set (RUO + institutional biosafety/IRB/IACUC notice)",
+  "project": "lab-protocols-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["open-science", "lab-safety", "reproducibility", "cancer-research"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Protocol authors need a schema-aligned YAML/JSON authoring template so they can populate all required fields correctly from the start, reducing rework and linter failures. The template must also embed the mandatory disclaimer set — Research Use Only (RUO) and the 'not a substitute for your institution's biosafety/EHS/IBC/IACUC/IRB requirements' notice — ensuring every protocol carries these guardrails from day one. Depends on schema-001 (field list) and vocab-004 (valid vocabulary values).",
+  "objective": "Produce a YAML/JSON authoring template pre-populated with all required schema fields (placeholder values + inline comments), the complete mandatory disclaimer set, and a contributor guide explaining each field and how to fill it correctly.",
+  "acceptanceCriteria": [
+    "Template covers all required schema-001 fields with placeholder values and inline comments explaining each field.",
+    "Mandatory disclaimer set is embedded: RUO disclaimer and 'not a substitute for institutional biosafety/EHS/IBC/IACUC/IRB' notice, with rationale for each.",
+    "Template references valid vocabulary values from vocab-004 for hazard/PPE/waste/biosafety fields.",
+    "A contributor guide (Markdown) accompanies the template, explaining provenance requirements, safety auto-escalation, and the ethics flags.",
+    "Safety reviewer sign-off (or pending annotation) on the disclaimer set; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open vocab-004 (controlled vocabularies)"
+  ],
+  "output": "Committed authoring template (templates/protocol-template.yaml or equivalent) with inline comments and mandatory disclaimers, plus a contributor guide (Markdown); commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
