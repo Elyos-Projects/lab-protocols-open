@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-reviewer-002",
+  "title": "Secure/name a credentialed safety (biosafety/EHS) reviewer — blocking, non-skippable gate role",
+  "project": "lab-protocols-open",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "lab-safety", "biosafety", "open-science"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "lab-protocols-open produces versioned, structured, openly-licensed wet-lab protocols for cancer research, each with a rigorous safety section. Per the Good Deed Definition, safety-bearing content is high-stakes and requires credentialed expert sign-off before a protocol is delivered. No such reviewer is yet secured. This blocking role task must be completed before any safety-bearing protocol (i.e., essentially all of them) can ship. No partner or adopter has committed, so verifiedNeed is false.",
+  "objective": "Identify, vet, and secure a named credentialed biosafety/EHS reviewer (or qualified lab safety officer) to hold the non-skippable safety sign-off, and document the minimum credential, verification method, availability/SLA, and conflict-of-interest disclosure.",
+  "acceptanceCriteria": [
+    "A named individual or role-holder with a verifiable biosafety/EHS credential (e.g., RBP/CBSP or institutional biosafety officer) has agreed to the safety sign-off role.",
+    "Minimum acceptable credential and the verification method are documented.",
+    "Reviewer availability/SLA for sign-off and a conflict-of-interest disclosure are recorded.",
+    "A written, ratified decision states no safety-bearing protocol ships until this role is filled.",
+    "Document committed to the project repo; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\Users\\jason\\AppData\\Local\\Temp\\claude\\C--code-elyos\\5eca0d44-6b8b-4c30-9696-37a524cb249a\\scratchpad\\plans\\lab-protocols-open\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "NIH/CDC Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th ed.",
+    "American Biological Safety Association (ABSA) credential registry"
+  ],
+  "output": "A committed governance document naming/securing the credentialed safety reviewer, with credential verification, SLA, conflict-of-interest disclosure, and the blocking-gate decision.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
