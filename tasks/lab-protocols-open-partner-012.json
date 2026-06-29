@@ -1,0 +1,31 @@
+{
+  "id": "lab-protocols-open-partner-012",
+  "title": "Secure ≥1 adopting partner in writing (flips verifiedNeed)",
+  "project": "lab-protocols-open",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-science", "cancer-research", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every current task carries verifiedNeed:false because no lab, core facility, or repository has committed to adopting the project's output. Securing a named partner in writing is the M1 exit gate and the trigger that allows verifiedNeed to begin flipping to true for adopted protocols. Without this commitment, the project risks producing high-quality content that no one uses — the opposite of Elyos's 'delivered, not merged' bar. This task builds directly on outreach-006 (candidate list) and converts a candidate to a confirmed partner.",
+  "objective": "Convert at least one candidate adopting partner (identified in outreach-006) to a written commitment to adopt and use lab-protocols-open output, documenting the partner's identity, adoption scope, and any co-maintenance commitment.",
+  "acceptanceCriteria": [
+    "At least one named lab, core facility, protocol repository, or teaching program provides a written commitment (email, signed MOU, or equivalent) to adopt at least one shipped protocol.",
+    "Partner's identity, affiliation, adoption scope, and any co-maintenance or attribution commitment are documented.",
+    "Written commitment committed (redacted if necessary for privacy) to the project repo.",
+    "Project records updated to reflect verifiedNeed:true for any protocol the partner has committed to adopt.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open outreach-006 (candidate partner and reviewer outreach document)"
+  ],
+  "output": "Committed documentation of ≥1 written partner commitment with adoption scope; verifiedNeed updated for relevant tasks; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

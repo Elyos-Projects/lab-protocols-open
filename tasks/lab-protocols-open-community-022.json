@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-community-022",
+  "title": "Community-submission vetting policy + contributor guide",
+  "project": "lab-protocols-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["open-science", "reproducibility", "lab-safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Once the seed library and tooling are established, community contributions from external researchers will be the primary growth path for the protocol corpus. However, allowing unvetted community submissions without a clear policy risks license violations, safety errors, and DURC content entering the library. This unscheduled backlog task defines the community-submission vetting policy and companion contributor guide, gating external submissions through the same quality bar as internal ones while keeping the contribution process accessible.",
+  "objective": "Design and publish a community-submission vetting policy that gates external protocol submissions through the full license+ethics, safety, and technical review pipeline, and a companion contributor guide that makes the requirements clear and actionable for external contributors.",
+  "acceptanceCriteria": [
+    "Vetting policy specifies: minimum submission requirements (schema-valid, linter-green, license evidence), reviewer assignment for external submissions, and the non-skippable safety sign-off requirement.",
+    "Policy explicitly addresses contributor identity (DCO sign-off), conflict-of-interest disclosure, and what happens when a submission fails a gate.",
+    "Companion contributor guide is accessible to a non-expert researcher: explains the schema, the licensing requirements, the safety requirements, and how to use the authoring template.",
+    "Policy integrated with the contribution workflow (workflow-011) and PR template.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open workflow-011 (contribution workflow and reviewer rotation)",
+    "lab-protocols-open gate-003 (license+ethics+dual-use gate checklist)",
+    "lab-protocols-open template-005 (authoring template)"
+  ],
+  "output": "Committed community-submission vetting policy and contributor guide (CONTRIBUTING.md or equivalent), integrated with the PR template and contribution workflow; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

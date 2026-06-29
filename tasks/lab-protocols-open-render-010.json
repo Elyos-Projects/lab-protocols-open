@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-render-010",
+  "title": "`protocol render` — record to Markdown/HTML (optional PDF)",
+  "project": "lab-protocols-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["open-science", "reproducibility", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A structured protocol record (YAML/JSON) is not human-usable without a readable rendered form. The protocol render command converts a validated, linted protocol record to Markdown and HTML, with optional PDF generation, making protocols accessible to researchers who are not comfortable with raw YAML. The renderer must embed all mandatory disclaimers (RUO + institutional notice) prominently and represent safety sections clearly so they are not overlooked. Depends on schema-001 (data model) and template-005 (disclaimer set and formatting conventions).",
+  "objective": "Implement the protocol render CLI command that converts a schema-valid protocol record to Markdown and HTML output, with clearly formatted safety sections, embedded mandatory disclaimers, provenance citations, and optional PDF generation.",
+  "acceptanceCriteria": [
+    "protocol render <path> --format md|html produces a human-readable Markdown or HTML file from a schema-valid protocol record.",
+    "Output prominently embeds both mandatory disclaimers (RUO + institutional biosafety/EHS/IBC/IACUC/IRB notice) at the top.",
+    "Safety section (PPE, hazards, waste, emergency) is visually distinct (callout box or bold section) in all output formats.",
+    "Provenance citations are rendered per step and per safety claim as numbered references or footnotes.",
+    "Optional PDF output path documented (even if delegated to an external converter); decision on in-house vs external converter recorded.",
+    "pnpm build && pnpm test && pnpm lint pass; CI green; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open template-005 (disclaimer set and formatting conventions)"
+  ],
+  "output": "A merged PR adding the protocol render CLI command with tests, sample rendered outputs (Markdown + HTML), and CI integration; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

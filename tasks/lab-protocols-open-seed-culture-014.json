@@ -1,0 +1,36 @@
+{
+  "id": "lab-protocols-open-seed-culture-014",
+  "title": "Cell-culture protocol set (passaging, cryopreservation, mycoplasma testing)",
+  "project": "lab-protocols-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "lab-safety", "biosafety", "reproducibility", "open-science"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Cell-line culture methods (passaging, cryopreservation, mycoplasma testing) are foundational to virtually all cancer cell-biology research and are a primary source of reproducibility failures due to cross-contamination, incorrect passaging intervals, and mycoplasma contamination. These methods involve biohazardous material (BSL-1/2 cell lines), cryogenic hazards (liquid nitrogen), and DMSO handling, requiring rigorous safety documentation. Human-derived cell lines may require IRB/ethics flags. This is the largest task in the M2 seed library.",
+  "objective": "Author, validate, lint, and ship a set of cell-culture protocols (passaging, cryopreservation, mycoplasma testing) through the full pipeline, each schema-valid, linter-green, with 100% provenance, complete safety sections (including BSL designation), human-derived material ethics flags where applicable, and credentialed safety sign-off.",
+  "acceptanceCriteria": [
+    "At least three protocols authored: cell passaging, cryopreservation (with liquid-nitrogen handling), and mycoplasma testing; each schema-valid and linter-green.",
+    "Human-derived cell-line steps flagged with ethics.humanDerivedMaterial:true and IRB/consent pointer where applicable; no donor data included.",
+    "Biohazard handling, BSL level, and waste disposal cited to BMBL/OSHA per step; credentialed safety sign-off recorded.",
+    "100% of steps and safety claims carry resolvable, license-verified provenance references.",
+    "License+Ethics gate PASS per protocol; dual-use screen clear; all mandatory disclaimers present.",
+    "semver v1.0.0 + CHANGELOG per protocol; rendered Markdown/HTML produced; CI green; commits DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema)",
+    "lab-protocols-open validate-008, lint-009, render-010 (pipeline tooling)",
+    "NIH/CDC BMBL 6th ed. (BSL-1/2 cell culture, cryogenic hazards)",
+    "ATCC cell line handling guidelines (openly available)",
+    "protocols.io (per-protocol CC-BY source candidates — license must be verified per item)"
+  ],
+  "output": "Committed, fully-reviewed cell-culture protocol records (passaging, cryopreservation, mycoplasma testing) with rendered outputs, license evidence, ethics flags, and all review sign-offs; CI green; commits DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

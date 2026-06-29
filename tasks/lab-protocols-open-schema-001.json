@@ -1,0 +1,34 @@
+{
+  "id": "lab-protocols-open-schema-001",
+  "title": "Protocol JSON Schema + Safety/Provenance sub-schemas + canonical data model",
+  "project": "lab-protocols-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-science", "reproducibility", "lab-safety", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "lab-protocols-open is schema-first: no protocol may be authored until the JSON Schema contract exists, because schema validity is the foundation for the validator, linter, renderer, and interoperability with Bioschemas/schema.org. The schema must capture steps, materials (CAS/hazardClass/SDS refs), equipment, safety, ethics flags, QC, troubleshooting, versioning, and provenance, with a Safety sub-schema that auto-escalates riskTier to high on any hazard/biohazard/animal/human-material flag. This is M0's foundational technical deliverable.",
+  "objective": "Design and publish the Protocol JSON Schema (validated with ajv) including Safety and Provenance sub-schemas, a canonical data model, safety auto-escalation rules, and a documented crosswalk to Bioschemas LabProtocol / schema.org fields.",
+  "acceptanceCriteria": [
+    "JSON Schema validates with ajv; covers steps, materials (casNumber, hazardClass, sdsRef), equipment, safety, ethics flags, qc, troubleshooting, provenance, dualUseScreen, review, semver version + changelogRef.",
+    "Safety auto-escalation encoded and documented: any hazard/biohazard/animal/human-material flag implies riskTier:high; authors cannot downgrade.",
+    "Every step and every safety item has a required provenance reference field.",
+    "Maps to Bioschemas LabProtocol / schema.org fields; interop crosswalk documented.",
+    "pnpm build && pnpm test && pnpm lint pass for committed schema/tooling; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "Bioschemas LabProtocol profile — https://bioschemas.org/profiles/LabProtocol/",
+    "schema.org LabProtocol — https://schema.org/LabProtocol",
+    "ajv JSON Schema validator — https://ajv.js.org/",
+    "NIH/CDC BMBL 6th ed. (biosafety level definitions)"
+  ],
+  "output": "A committed Protocol JSON Schema (packages/schema or equivalent) with Safety and Provenance sub-schemas, ajv-validated, safety auto-escalation documented, and a Bioschemas/schema.org crosswalk document; CI green.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

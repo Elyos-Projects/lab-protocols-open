@@ -1,0 +1,34 @@
+{
+  "id": "lab-protocols-open-regional-021",
+  "title": "Regional waste/PPE/biosafety variant notes (US/EU/LMIC)",
+  "project": "lab-protocols-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["lab-safety", "biosafety", "open-science", "cancer-research"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's primary audience includes resource-limited labs in low- and middle-income countries (LMICs), but safety regulations for waste disposal, PPE requirements, and biosafety practices differ significantly between US (OSHA/EPA), EU (ECHA/national agencies), and LMIC contexts. Current protocols reference US/federal standards and risk implying these are universal. This unscheduled backlog task resolves the open question on jurisdictions by authoring regional variant notes that accompany shipped protocols without replacing or contradicting local institutional authority.",
+  "objective": "Research and publish regional variant notes for waste disposal, PPE, and biosafety regulation covering at least US (OSHA/EPA/CDC), EU (ECHA + representative national guidance), and a LMIC-relevant framing, as addenda to shipped protocols — without asserting that any jurisdiction's rules supersede local institutional requirements.",
+  "acceptanceCriteria": [
+    "Regional variant notes produced for at least three jurisdictions: US (OSHA/EPA/CDC/BMBL), EU (ECHA + representative national guidance e.g., UK or DE), and an LMIC-representative framing referencing WHO/UNEP guidance.",
+    "Each regional note explicitly states it does not supersede local institutional, national, or regulatory authority.",
+    "Notes are structured as addenda to the base protocol schema (not embedded in the base protocol record), so they can be updated independently.",
+    "All regulatory citations include version/edition, publication date, and URL; credentialed safety reviewer sign-off recorded.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "OSHA Laboratory Standard 29 CFR 1910.1450 (US)",
+    "ECHA chemical safety guidance — https://echa.europa.eu/ (EU)",
+    "WHO Laboratory biosafety manual, 4th ed. — https://www.who.int/publications/i/item/9789240011311 (international/LMIC-relevant)",
+    "UNEP Basel Convention on hazardous waste (international)"
+  ],
+  "output": "Committed regional variant notes (waste/PPE/biosafety) for US, EU, and LMIC contexts as protocol addenda, with authority disclaimers and authoritative citations; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

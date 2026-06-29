@@ -1,0 +1,35 @@
+{
+  "id": "lab-protocols-open-interop-017",
+  "title": "Bioschemas/schema.org export + protocols.io import/export round-trip",
+  "project": "lab-protocols-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["open-science", "reproducibility", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Interoperability with existing ecosystems (Bioschemas/schema.org and protocols.io) is the M3 strategic goal that makes the corpus reusable beyond the project itself and supports a clean handoff to an adopting repository. The crosswalk to Bioschemas LabProtocol was designed in schema-001; this task implements the export and validates a protocols.io import-to-export round-trip without losing safety or provenance fields. Depends on schema-001 (data model and crosswalk) and render-010 (renderer infrastructure).",
+  "objective": "Implement Bioschemas LabProtocol / schema.org JSON-LD export from protocol records, and implement a protocols.io import adaptor with a tested round-trip (protocols.io import → our schema → export) that preserves all safety and provenance fields.",
+  "acceptanceCriteria": [
+    "protocol render --format jsonld produces a valid Bioschemas LabProtocol / schema.org JSON-LD document from a protocol record.",
+    "A protocols.io import adaptor converts a protocols.io JSON export to the lab-protocols-open schema without losing safety/provenance fields; round-trip test committed.",
+    "Safety and provenance fields are preserved through the import-to-export round-trip; any unmappable fields are logged as warnings, not silently dropped.",
+    "pnpm build && pnpm test && pnpm lint pass; CI green; commit DCO signed-off.",
+    "A brief interop guide documents the export/import commands and any known field mapping limitations."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open schema-001 (Protocol JSON Schema and Bioschemas crosswalk)",
+    "lab-protocols-open render-010 (renderer)",
+    "Bioschemas LabProtocol profile — https://bioschemas.org/profiles/LabProtocol/",
+    "schema.org LabProtocol — https://schema.org/LabProtocol",
+    "protocols.io API documentation — https://www.protocols.io/developers"
+  ],
+  "output": "A merged PR adding JSON-LD export and a protocols.io import adaptor with a round-trip test, interop guide, and CI integration; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

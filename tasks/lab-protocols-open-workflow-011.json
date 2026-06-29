@@ -1,0 +1,32 @@
+{
+  "id": "lab-protocols-open-workflow-011",
+  "title": "Contribution workflow + reviewer rotation + PR template enforcing gates",
+  "project": "lab-protocols-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["open-science", "lab-safety", "reproducibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "With schema, vocabulary, tooling, and gates defined, the project needs a documented contribution workflow so that external contributors can submit protocols correctly and reviewers can process them efficiently. The workflow must enforce the non-skippable gates (license+ethics, safety sign-off) through a PR template and document reviewer rotation, escalation paths, and the Sev-1 errata process for safety errors in shipped protocols. Depends on gate-003 (gates to enforce) and reviewer-002 (safety sign-off role to reference).",
+  "objective": "Design and publish the contribution workflow covering the full submission-to-ship pipeline, a GitHub PR template that enforces all gates, reviewer rotation and escalation documentation, and the Sev-1 errata process for post-publication safety issues.",
+  "acceptanceCriteria": [
+    "PR template requires checklist confirming: schema-valid, linter-green, license+ethics evidence recorded, dual-use screen clear, and required reviewer sign-offs (technical + safety, +domain where applicable).",
+    "Contribution workflow document describes the full pipeline from candidate protocol to shipped status, referencing each gate and tool.",
+    "Reviewer rotation and escalation documented: who holds technical, safety, and domain reviewer roles; how to escalate when roles are vacant; safety sign-off marked non-skippable.",
+    "Sev-1 errata process documented: pull/flag protocol on safety error, fix, re-review, re-version, notify known adopters.",
+    "Document committed to repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open gate-003 (license+ethics+dual-use gate checklist)",
+    "lab-protocols-open reviewer-002 (credentialed safety reviewer role)"
+  ],
+  "output": "Committed contribution workflow document, GitHub PR template (.github/PULL_REQUEST_TEMPLATE.md), and reviewer rotation/errata documentation; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

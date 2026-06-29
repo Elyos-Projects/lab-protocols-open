@@ -1,0 +1,33 @@
+{
+  "id": "lab-protocols-open-revision-016",
+  "title": "Exercise versioning: ship a v2 of one protocol with a v1-to-v2 diff/changelog",
+  "project": "lab-protocols-open",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["open-science", "reproducibility", "lab-safety", "cancer-research"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Versioning discipline — semantic versioning with a human-readable changelog and a reviewable diff between versions — is a core project quality bar and M2 exit criterion. This task exercises that discipline by bumping one already-shipped seed protocol to v2 with a substantive, reviewer-approved change, producing the first v1-to-v2 diff in the corpus. Since the protocol has safety content, the revision requires a safety re-review and adopter notification per the contribution workflow. The riskTier is high because any change to safety content triggers full safety re-review.",
+  "objective": "Select one shipped seed protocol, make a substantive, documented revision to produce v2.0.0, generate a reviewer-approved v1-to-v2 changelog and diff, perform a safety re-review of the changes, and notify known adopters per the Sev-1 errata / revision workflow.",
+  "acceptanceCriteria": [
+    "A shipped seed protocol is bumped to a new semver (e.g., v2.0.0) with a clear, substantive change documented in CHANGELOG.md.",
+    "A v1-to-v2 diff (git diff or equivalent) is produced and committed alongside the new version.",
+    "Safety re-review performed on the revision; any changed safety content signed off by the credentialed safety reviewer.",
+    "Known adopters notified of the revision per the contribution workflow (workflow-011); notification record committed.",
+    "The updated protocol passes validate and lint; rendered Markdown/HTML updated; CI green; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open workflow-011 (contribution workflow and errata/revision process)",
+    "lab-protocols-open validate-008, lint-009, render-010 (pipeline tooling)",
+    "semver specification — https://semver.org/"
+  ],
+  "output": "A committed v2 protocol record with CHANGELOG.md, v1-to-v2 diff, safety re-review sign-off, adopter notification record, updated rendered outputs; CI green; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

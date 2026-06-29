@@ -1,0 +1,31 @@
+{
+  "id": "lab-protocols-open-sustain-018",
+  "title": "Adoption tracking ledger + maintenance/rotation handoff plan",
+  "project": "lab-protocols-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["open-science", "reproducibility", "cancer-research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's headline outcome metric (#1) is real external adoption by ≥5 distinct adopters, and the safety-reviewer role is a standing, non-optional commitment that must survive maintainer turnover. This task produces the public adoption tracking ledger and the documented maintenance/rotation handoff plan, ensuring the corpus remains trustworthy and its outcomes are tracked even after initial delivery. Depends on partner-012 (at least one partner secured before tracking is meaningful).",
+  "objective": "Design and publish a public adoption tracking ledger recording each shipped protocol's version, reviewers, license, and adoption status, along with a documented maintenance owner, reviewer rotation plan, and donation/handoff path for the corpus.",
+  "acceptanceCriteria": [
+    "A public adoption tracking ledger (Markdown table or structured YAML) records each shipped protocol: version, technical reviewer, safety reviewer, license, adoption status, and date shipped.",
+    "Named maintenance owner and reviewer rotation documented, including how the credentialed safety reviewer role is filled on turnover.",
+    "Documented donation/handoff path for the CC-BY-4.0 corpus + MIT tooling (e.g., donation to a protocols.io collection or equivalent).",
+    "Ledger and maintenance plan committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/lab-protocols-open/blob/main/PLAN.md",
+    "lab-protocols-open partner-012 (adopting partner documentation)",
+    "lab-protocols-open workflow-011 (contribution workflow and reviewer rotation baseline)"
+  ],
+  "output": "Committed adoption tracking ledger and maintenance/rotation handoff plan, including the corpus donation path; commit DCO signed-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
